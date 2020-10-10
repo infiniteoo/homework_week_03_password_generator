@@ -40,7 +40,6 @@ function generatePassword() {
 
         // if at least one of the rule style types were selected true we can proceed out of this loop
         if (lowerCasePrompt || upperCasePrompt || numericPrompt || specialPrompt) {
-            console.log('good job, at least one of the special character prompts came back true!');
             validCharacterTypeSelected = true;
         } else {
             alert("I'm sorry, but you must choose at least ONE character type for a secure password.  Please try again!")
@@ -60,13 +59,13 @@ function generatePassword() {
     let specialCharacters = ['!', '"', '#', '$', '%', '&', '`', '(', ')', '*', '+', ',', '~', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '{', '|', '}', '-']
 
     // whichever special rules they decided to add to the password (lower/upper case, numeric and special characters)
-    // will be added to an array, so that we can easily randomly pick one to cusotmize each character in the new password
+    // will be added to an array, so that we can easily, randomly pick one to cusotmize each character in the new password
 
-    let specialCharactersArray = [];
+    let appliedRulesArray = [];
 
     function addRuleToArray(ruleName) {
 
-        specialCharactersArray.push(ruleName);
+        appliedRulesArray.push(ruleName);
 
     }
     if (lowerCasePrompt) {
@@ -91,8 +90,8 @@ function generatePassword() {
         // now we're going to construct this password one character at a time with this loop
         // depending on which character types were selected we'll use those as the password's characters
 
-        // randomly picks a rule type from the specialCharactersArray
-        let characterType = specialCharactersArray[Math.floor(Math.random() * (specialCharactersArray.length))];
+        // randomly picks a rule type from the appliedRulesArray
+        let characterType = appliedRulesArray[Math.floor(Math.random() * (appliedRulesArray.length))];
 
         // depending on which randomly chosen rule type is selected, we'll apply that rule through this switch statement. 
         switch (characterType) {
