@@ -32,10 +32,11 @@ This was a really fun project, and a multitude of steps were taken to finalize t
 
 After multiple trial and error debugging sessions, all applied logic appears sound and no bugs can be generated from purposeful negligent entries.  From this point, it was time to clean up:
 
-* Refactor reduntant and worthless code
-* Removed multiple, annoying console.log commands used for debugging
+* Refactor reduntant and worthless code.
+* Removed multiple, annoying console.log commands used for debugging.
 * Double-checked to ensured code was properly formatted and commented before submission.
 * Wrote README.MD file.
+* Added screenshots to README.
  
 
 ### Installation
@@ -52,6 +53,14 @@ This project can be previewed live via Github Pages at: https://infiniteoo.githu
 
 # Screenshots of Deployed Website
 
+## 992px Width Media Screen
+![screenshot 992px width: index.html](/img/992px_passwordGenerator.PNG)
+
+## 768px Width Media Screen
+![screenshot 768px width: index.html](/img/768px_passwordGenerator.PNG)
+
+## 400px Width Media Screen
+![screenshot 400px width: index.html](/img/400px_passwordGenerator.PNG)
 
 
 
