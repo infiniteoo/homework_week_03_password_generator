@@ -33,10 +33,10 @@ function generatePassword() {
     while (!validCharacterTypeSelected) {
 
         // need error handling to ensure at least one of these returns true
-        lowerCasePrompt = confirm(errorMessage());
-        upperCasePrompt = confirm(errorMessage());
-        numericPrompt = confirm(errorMessage());
-        specialPrompt = confirm(errorMessage());
+        lowerCasePrompt = confirm("Include lower case characters in new password? (NOTE: at lease one character type must be selected.");
+        upperCasePrompt = confirm("Include upper case characters in new password? (NOTE: at lease one character type must be selected.");
+        numericPrompt = confirm("Include numeric characters in new password? (NOTE: at lease one character type must be selected.");
+        specialPrompt = confirm("Include special characters in new password? (NOTE: at lease one character type must be selected.");
 
         // if at least one of the rule style types were selected true we can proceed out of this loop
         if (lowerCasePrompt || upperCasePrompt || numericPrompt || specialPrompt) {
@@ -47,9 +47,6 @@ function generatePassword() {
 
     }
 
-    function errorMessage() {
-        return "Include lower case characters in new password? (NOTE: at lease one character type must be selected.)";
-    }
 
 
     // creating array of letters and special characters so i can easily randomly choose from them.  numeric doesn't need an array, and for the
@@ -85,7 +82,7 @@ function generatePassword() {
     let tempChar = '';
 
     // run a for loop for as long as the password length entered was
-    for (let i = 0; i < passwordLengthPrompt + 1; i++) {
+    for (let i = 0; i < passwordLengthPrompt; i++) {
 
         // now we're going to construct this password one character at a time with this loop
         // depending on which character types were selected we'll use those as the password's characters
