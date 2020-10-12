@@ -53,13 +53,13 @@ This project can be previewed live via Github Pages at: https://infiniteoo.githu
 
 # Screenshots of Deployed Website
 
-## 992px Width Media Screen
+## 992px Width Media Screen - 128 Characters With All Character Types
 ![screenshot 992px width: index.html](/img/992px_passwordGenerator.PNG)
 
-## 768px Width Media Screen
+## 768px Width Media Screen - 10 Characters With Upper Case & Special Characters
 ![screenshot 768px width: index.html](/img/768px_passwordGenerator.PNG)
 
-## 400px Width Media Screen
+## 400px Width Media Screen - 25 Characters With Upper Case, Numeric and Special Characters
 ![screenshot 400px width: index.html](/img/400px_passwordGenerator.PNG)
 
 
